@@ -29,8 +29,8 @@ public class RestApiSteps {
 	}
 	
 	@When("I create a DELETE request to delete employee with id {string}")
-	public void i_create_a_delete_request_to_delete_employee_with_id(String string) {
-	    response = request.delete("/v1/delete/719");
+	public void i_create_a_delete_request_to_delete_employee_with_id(String employeeId) {
+	    response = request.delete("/" + employeeId);
 	}
 	
 	@When("I create a POST request to create employee with details")

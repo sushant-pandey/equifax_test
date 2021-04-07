@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-07T08:36:15.691Z",
+        "start_timestamp": "2021-04-07T08:56:20.798Z",
         "before": [
           {
             "result": {
-              "duration": 3002000,
+              "duration": 2010000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 121993000,
+              "duration": 116708000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6738067000,
+              "duration": 7037306000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 5340469000,
+              "duration": 6032632000,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 4174565000,
+              "duration": 3429328000,
               "status": "passed"
             },
             "line": 7,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 38379000,
+              "duration": 71376000,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 1238067000,
+              "duration": 1105943000,
               "status": "passed"
             },
             "line": 9,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 53816000,
+              "duration": 56456000,
               "status": "passed"
             },
             "line": 10,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 639205000,
+              "duration": 681322000,
               "status": "passed"
             },
             "line": 11,
@@ -145,11 +145,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-07T08:36:34.240Z",
+        "start_timestamp": "2021-04-07T08:56:39.515Z",
         "before": [
           {
             "result": {
-              "duration": 265000,
+              "duration": 383000,
               "status": "passed"
             },
             "match": {
@@ -158,15 +158,15 @@
           }
         ],
         "line": 4,
-        "name": "Verification of the GET call to API.",
+        "name": "Verification of the GET request to API.",
         "description": "",
-        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-get-call-to-api.",
+        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-get-request-to-api.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 832759000,
+              "duration": 829566000,
               "status": "passed"
             },
             "line": 5,
@@ -184,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 2297425000,
+              "duration": 2840803000,
               "status": "passed"
             },
             "line": 6,
@@ -196,9 +196,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\n\tat ✽.The response has status code \"200\"(file:///Users/sushantpandey/Documents/Other%20Imp%20Documents/MindTree/equifax_test/src/test/resources/features/RestApiTest.feature:7)\n",
-              "duration": 3971000,
-              "status": "failed"
+              "duration": 1893000,
+              "status": "passed"
             },
             "line": 7,
             "name": "The response has status code \"200\"",
@@ -215,8 +214,8 @@
           },
           {
             "result": {
-              "duration": 1110000,
-              "status": "skipped"
+              "duration": 125000,
+              "status": "passed"
             },
             "line": 8,
             "name": "The status line shows \"HTTP/1.1 200 OK\"",
@@ -233,8 +232,8 @@
           },
           {
             "result": {
-              "duration": 565000,
-              "status": "skipped"
+              "duration": 1141695000,
+              "status": "passed"
             },
             "line": 9,
             "name": "The response body has following details",
@@ -308,11 +307,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-07T08:36:37.451Z",
+        "start_timestamp": "2021-04-07T08:56:44.366Z",
         "before": [
           {
             "result": {
-              "duration": 925000,
+              "duration": 1077000,
               "status": "passed"
             },
             "match": {
@@ -321,15 +320,15 @@
           }
         ],
         "line": 22,
-        "name": "Verification of the POST call to API.",
+        "name": "Verification of the POST request to API.",
         "description": "",
-        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-post-call-to-api.",
+        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-post-request-to-api.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2673000,
+              "duration": 2135000,
               "status": "passed"
             },
             "line": 23,
@@ -347,7 +346,7 @@
           },
           {
             "result": {
-              "duration": 967686000,
+              "duration": 1719152000,
               "status": "passed"
             },
             "line": 24,
@@ -379,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 4696000,
+              "duration": 1298000,
               "status": "passed"
             },
             "line": 28,
@@ -397,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 543000,
+              "duration": 328000,
               "status": "passed"
             },
             "line": 29,
@@ -415,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 866721000,
+              "duration": 68631000,
               "status": "passed"
             },
             "line": 30,
@@ -434,6 +433,127 @@
                 "cells": [
                   "message",
                   "Successfully! Record has been added."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-07T08:56:46.174Z",
+        "before": [
+          {
+            "result": {
+              "duration": 158000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Verification of the DELETE request to API.",
+        "description": "",
+        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-delete-request-to-api.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 517000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the endpoint endpoint \"http://dummy.restapiexample.com/api/v1/delete\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://dummy.restapiexample.com/api/v1/delete\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_endpoint_endpoint_exists(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 615910000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I create a DELETE request to delete employee with id \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 53
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.i_create_a_delete_request_to_delete_employee_with_id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\n\tat ✽.The response has status code \"200\"(file:///Users/sushantpandey/Documents/Other%20Imp%20Documents/MindTree/equifax_test/src/test/resources/features/RestApiTest.feature:38)\n",
+              "duration": 6797000,
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "The response has status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 29
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 957000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "The status line shows \"HTTP/1.1 200 OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HTTP/1.1 200 OK\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_status_line_shows(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 219000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "The response body has following details",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_body_has_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "message",
+                  "Successfully! Record has been deleted"
                 ]
               }
             ],

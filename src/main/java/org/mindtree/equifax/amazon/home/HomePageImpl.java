@@ -3,12 +3,13 @@ package org.mindtree.equifax.amazon.home;
 import org.mindtree.equifax.amazon.searchresult.ProductListingPage;
 import org.mindtree.equifax.amazon.searchresult.ProductListingPageImpl;
 import org.mindtree.equifax.amazon.seleniumlibrary.SeleniumUtil;
+import org.mindtree.equifax.config.ConfigFileReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePageImpl implements HomePage{
 	
-	private String amazonHomePageUrl = "https://www.amazon.com/";
+	private String amazonHomePageUrl = "";
 	
 	private WebDriver driver;
 	private By searchBox = By.id("twotabsearchtextbox");
@@ -18,13 +19,14 @@ public class HomePageImpl implements HomePage{
 	public HomePageImpl(WebDriver driver) {
 		this.driver = driver;
 		seleniumUtil = new SeleniumUtil(driver);
+		
 	}
 	
 	/**
 	 *  Navigate to the home page url
 	 */
 	public HomePageImpl navigateToHomePage() {
-		driver.get(amazonHomePageUrl);
+		driver.get(new ConfigFileReader().getProperty("amazon.url"));
 		return this;
 	}
 
