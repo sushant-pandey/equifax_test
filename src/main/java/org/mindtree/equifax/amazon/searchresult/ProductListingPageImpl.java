@@ -11,6 +11,7 @@ public class ProductListingPageImpl implements ProductListingPage{
 	private WebDriver driver;
 	private By firstSearchResultLoc = By.xpath("//div[@data-index='1']");
 	private String priceOfFirstItem;
+	private WebElement firstSearchResult;
 	
 	public ProductListingPageImpl(WebDriver driver){
 		this.driver = driver;
@@ -22,7 +23,7 @@ public class ProductListingPageImpl implements ProductListingPage{
 	@Override
 	public ProductDetailPage selectFirstSearchResult() {
 		new WaitUtils(driver).waitTillPresenceOfElement(firstSearchResultLoc);
-		WebElement firstSearchResult = driver.findElement(firstSearchResultLoc);
+		firstSearchResult = driver.findElement(firstSearchResultLoc);
 		firstSearchResult.findElement(By.xpath("descendant::a")).click();
 		return new ProductDetailPageImpl(driver);
 	}
@@ -38,7 +39,14 @@ public class ProductListingPageImpl implements ProductListingPage{
 		return priceOfFirstItem;
 	}
 	
-	
+	/**
+	 * Retrieves the name of the product from product results
+	 */
+	@Override
+	public String getFirstProductName() {
+		WebElement nameElement = firstSearchResult.findElement(By.xpath("//span[@class='a-size-base-plus a-color-base a-text-normal']"));
+		return nameElement.getText();
+	}
 	
 	
 }

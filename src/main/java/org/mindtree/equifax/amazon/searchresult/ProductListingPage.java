@@ -8,4 +8,5 @@ public interface ProductListingPage {
 	
 	String getPriceOfFirstSearchResult();
 	
+	String getFirstProductName();
 }
