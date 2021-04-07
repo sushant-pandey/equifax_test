@@ -1,6 +1,6 @@
-org/mindtree/equifax/amazon/home/HomePage.class
-org/mindtree/equifax/amazon/checkout/CheckoutPageImpl.class
-org/mindtree/equifax/amazon/checkout/CheckoutPage.class
-org/mindtree/equifax/amazon/home/HomePageImpl.class
-org/mindtree/equifax/amazon/cart/CartPage.class
-org/mindtree/equifax/amazon/cart/CartPageImpl.class
+org\mindtree\equifax\amazon\home\HomePage.class
+org\mindtree\equifax\amazon\cart\CartPage.class
+org\mindtree\equifax\amazon\home\HomePageImpl.class
+org\mindtree\equifax\amazon\cart\CartPageImpl.class
+org\mindtree\equifax\amazon\checkout\CheckoutPage.class
+org\mindtree\equifax\amazon\checkout\CheckoutPageImpl.class

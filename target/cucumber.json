@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-07T08:56:20.798Z",
+        "start_timestamp": "2021-04-07T09:12:01.740Z",
         "before": [
           {
             "result": {
-              "duration": 2010000,
+              "duration": 1999500,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 116708000,
+              "duration": 698055300,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7037306000,
+              "duration": 5327823000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 6032632000,
+              "duration": 6510265900,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 3429328000,
+              "duration": 3919934400,
               "status": "passed"
             },
             "line": 7,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 71376000,
+              "duration": 79997500,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 1105943000,
+              "duration": 1279042200,
               "status": "passed"
             },
             "line": 9,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 56456000,
+              "duration": 28958600,
               "status": "passed"
             },
             "line": 10,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 681322000,
+              "duration": 548001100,
               "status": "passed"
             },
             "line": 11,
@@ -145,11 +145,10 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-07T08:56:39.515Z",
+        "start_timestamp": "2021-04-07T09:12:20.214Z",
         "before": [
           {
             "result": {
-              "duration": 383000,
               "status": "passed"
             },
             "match": {
@@ -166,7 +165,7 @@
         "steps": [
           {
             "result": {
-              "duration": 829566000,
+              "duration": 648000500,
               "status": "passed"
             },
             "line": 5,
@@ -184,7 +183,7 @@
           },
           {
             "result": {
-              "duration": 2840803000,
+              "duration": 1194712600,
               "status": "passed"
             },
             "line": 6,
@@ -196,7 +195,6 @@
           },
           {
             "result": {
-              "duration": 1893000,
               "status": "passed"
             },
             "line": 7,
@@ -214,7 +212,6 @@
           },
           {
             "result": {
-              "duration": 125000,
               "status": "passed"
             },
             "line": 8,
@@ -232,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 1141695000,
+              "duration": 627999700,
               "status": "passed"
             },
             "line": 9,
@@ -307,11 +304,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-07T08:56:44.366Z",
+        "start_timestamp": "2021-04-07T09:12:22.703Z",
         "before": [
           {
             "result": {
-              "duration": 1077000,
+              "duration": 999900,
               "status": "passed"
             },
             "match": {
@@ -328,7 +325,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2135000,
+              "duration": 1002700,
               "status": "passed"
             },
             "line": 23,
@@ -346,7 +343,7 @@
           },
           {
             "result": {
-              "duration": 1719152000,
+              "duration": 653070200,
               "status": "passed"
             },
             "line": 24,
@@ -378,8 +375,9 @@
           },
           {
             "result": {
-              "duration": 1298000,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\r\n\tat ✽.The response has status code \"200\"(file:///C:/Users/Sushant%20Pandey/Desktop/equifax_test/src/test/resources/features/RestApiTest.feature:28)\r\n",
+              "duration": 2920900,
+              "status": "failed"
             },
             "line": 28,
             "name": "The response has status code \"200\"",
@@ -396,8 +394,7 @@
           },
           {
             "result": {
-              "duration": 328000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 29,
             "name": "The status line shows \"HTTP/1.1 200 OK\"",
@@ -414,8 +411,7 @@
           },
           {
             "result": {
-              "duration": 68631000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 30,
             "name": "The response body has following details",
@@ -441,11 +437,10 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-07T08:56:46.174Z",
+        "start_timestamp": "2021-04-07T09:12:23.376Z",
         "before": [
           {
             "result": {
-              "duration": 158000,
               "status": "passed"
             },
             "match": {
@@ -462,7 +457,7 @@
         "steps": [
           {
             "result": {
-              "duration": 517000,
+              "duration": 999900,
               "status": "passed"
             },
             "line": 36,
@@ -480,7 +475,7 @@
           },
           {
             "result": {
-              "duration": 615910000,
+              "duration": 563532400,
               "status": "passed"
             },
             "line": 37,
@@ -498,9 +493,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\n\tat ✽.The response has status code \"200\"(file:///Users/sushantpandey/Documents/Other%20Imp%20Documents/MindTree/equifax_test/src/test/resources/features/RestApiTest.feature:38)\n",
-              "duration": 6797000,
-              "status": "failed"
+              "duration": 1004700,
+              "status": "passed"
             },
             "line": 38,
             "name": "The response has status code \"200\"",
@@ -517,8 +511,7 @@
           },
           {
             "result": {
-              "duration": 957000,
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 39,
             "name": "The status line shows \"HTTP/1.1 200 OK\"",
@@ -535,8 +528,8 @@
           },
           {
             "result": {
-              "duration": 219000,
-              "status": "skipped"
+              "duration": 20996800,
+              "status": "passed"
             },
             "line": 40,
             "name": "The response body has following details",
