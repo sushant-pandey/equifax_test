@@ -6,12 +6,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features = "src/test/resources/features/RestApiTest.feature",
+	features = "src/test/resources/features",
 	glue = "org.mindtree.equifax.stepsdefinition",
 	dryRun = false,
 	monochrome = true,
 	plugin = {"pretty", "html:target/HtmlReports.html", "json:target/cucumber.json"}
 )
-public class TestApiRunner {
+public class TestRunner {
 
 }
