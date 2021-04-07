@@ -1,0 +1,453 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-07T08:06:29.047Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3526000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Assert the prices for single item checkout",
+        "description": "",
+        "id": "testing-the-amazon-checkout;assert-the-prices-for-single-item-checkout",
+        "after": [
+          {
+            "result": {
+              "duration": 126192000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6918681000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User visits the amazon home page",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.HomePageSteps.user_visits_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4665439000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User searches for the book \"qa testing for beginners\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa testing for beginners\"",
+                  "offset": 27
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.HomePageSteps.user_searches_for_the_book(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3953931000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects the first item in the listed results",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.ProductPageSteps.user_selects_the_first_item_in_the_listed_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41289000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Price on Add to cart page should match the search result page",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.ProductDetailPageSteps.price_on_add_to_cart_page_should_match_the_search_result_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1129501000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on Add to Cart",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.ProductDetailPageSteps.user_clicks_on_add_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115701000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Price on checkout page should match the search result page",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.CartPageSteps.price_on_checkout_page_should_match_the_search_result_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 532160000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on proceed to checkout",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.CartPageSteps.user_clicks_on_proceed_to_checkout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AmazonCheckout"
+          },
+          {
+            "name": "@UITest"
+          }
+        ]
+      }
+    ],
+    "name": "Testing the amazon checkout",
+    "description": "",
+    "id": "testing-the-amazon-checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AmazonCheckout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-07T08:06:46.653Z",
+        "before": [
+          {
+            "result": {
+              "duration": 600000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verification of the GET call to API.",
+        "description": "",
+        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-get-call-to-api.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 862993000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the endpoint endpoint \"http://dummy.restapiexample.com/api/v1/employees\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://dummy.restapiexample.com/api/v1/employees\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_endpoint_endpoint_exists(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1632933000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create a GET request",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.i_create_a_get_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\n\tat ✽.The response has status code \"200\"(file:///Users/sushantpandey/Documents/Projects/Java/es-workspace/equifax-test/src/test/resources/features/RestApiTest.feature:7)\n",
+              "duration": 3712000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The response has status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 29
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1492000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The status line shows \"HTTP/1.1 200 OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HTTP/1.1 200 OK\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_status_line_shows(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 730000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The response body has following details",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_body_has_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "data[0].id",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "data[0].employee_name",
+                  "Tiger Nixon"
+                ]
+              },
+              {
+                "cells": [
+                  "data[0].employee_salary",
+                  "320800"
+                ]
+              },
+              {
+                "cells": [
+                  "data[0].employee_age",
+                  "61"
+                ]
+              },
+              {
+                "cells": [
+                  "data[1].id",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "data[1].employee_name",
+                  "Garrett Winters"
+                ]
+              },
+              {
+                "cells": [
+                  "data[1].employee_salary",
+                  "170750"
+                ]
+              },
+              {
+                "cells": [
+                  "data[1].employee_age",
+                  "63"
+                ]
+              },
+              {
+                "cells": [
+                  "message",
+                  "Successfully! All records has been fetched."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-07T08:06:49.272Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1171000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verification of the POST call to API.",
+        "description": "",
+        "id": "testing-the-rest-apis-with-rest-assured;verification-of-the-post-call-to-api.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3384000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the endpoint endpoint \"http://dummy.restapiexample.com/api/v1/create\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://dummy.restapiexample.com/api/v1/create\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_endpoint_endpoint_exists(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 715530000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I create a POST request to create employee with details",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.i_create_a_post_request_to_create_employee_with_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "test"
+                ]
+              },
+              {
+                "cells": [
+                  "salary",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "age",
+                  "23"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[200]\u003e but was:\u003c[429]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(RestApiSteps.java:52)\n\tat ✽.The response has status code \"200\"(file:///Users/sushantpandey/Documents/Projects/Java/es-workspace/equifax-test/src/test/resources/features/RestApiTest.feature:28)\n",
+              "duration": 988000,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "The response has status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 29
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_has_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "The status line shows \"HTTP/1.1 200 OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HTTP/1.1 200 OK\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_status_line_shows(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 506000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "The response body has following details",
+            "match": {
+              "location": "org.mindtree.equifax.stepsdefinition.RestApiSteps.the_response_body_has_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "message",
+                  "Successfully! Record has been added."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Testing the Rest APIs with Rest Assured",
+    "description": "",
+    "id": "testing-the-rest-apis-with-rest-assured",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/RestApiTest.feature",
+    "tags": []
+  }
+]
