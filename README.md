@@ -40,5 +40,5 @@ target/
 
 ### KNOWN ISSUES:
 
-URL provided for API Test does not work all the time and repeatedly throws error 429 - Too Many Requests
+The API URL repeatedly throws error ### 429 - Too Many Requests
 
