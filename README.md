@@ -40,5 +40,5 @@ target/
 
 ### KNOWN ISSUES:
 
-The API URL repeatedly throws error ### 429 - Too Many Requests
+The API URL repeatedly throws error [429 - Too Many Requests]
 
