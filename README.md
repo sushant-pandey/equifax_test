@@ -1,4 +1,4 @@
-These are the required test scripts for coding test.
+# These are the required test scripts for coding test.
 
 ## Command to execute tests
 
@@ -38,7 +38,7 @@ src/main/java
 
 target/
 
-KNOWN ISSUES:
+### KNOWN ISSUES:
 
 URL provided for API Test does not work all the time and repeatedly throws error 429 - Too Many Requests
 
