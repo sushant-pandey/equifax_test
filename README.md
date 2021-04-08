@@ -3,6 +3,7 @@
 ## Command to execute tests
 
 mvn test
+
 mvn test -Dbrowser=chrome
 
 ## Required Chrome version
