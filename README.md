@@ -4,8 +4,6 @@
 
 mvn test
 
-mvn test -Dbrowser=chrome
-
 ## Required Chrome version
 
 89
