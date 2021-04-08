@@ -39,4 +39,10 @@ public class ConfigFileReader {
 		if(url != null) return url;
 		else throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+	
+	public String getBaseApiUrl() {
+		String apiUrl = properties.getProperty("base.api.url");
+		if(apiUrl != null) return apiUrl;
+		else throw new RuntimeException("Api url not specified in the Configuration.properties file.");
+	}
 }

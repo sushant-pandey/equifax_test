@@ -1,17 +1,14 @@
 package org.mindtree.equifax.stepsdefinition;
 
 import org.junit.Assert;
-import org.mindtree.equifax.amazon.cart.CartPage;
 import org.mindtree.equifax.amazon.data.TestContext;
 import org.mindtree.equifax.amazon.productdetail.ProductDetailPage;
-import org.mindtree.equifax.amazon.searchresult.ProductListingPage;
 
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 
 public class ProductDetailPageSteps {
-	TestContext testContext;
-	ProductDetailPage productDetailPage;
+	private TestContext testContext;
+	private ProductDetailPage productDetailPage;
 
 	public ProductDetailPageSteps(TestContext context) {
 		testContext = context;

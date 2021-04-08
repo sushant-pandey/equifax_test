@@ -8,17 +8,28 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class DriverManager {
 	private WebDriver driver;
 	
+	/**
+	 * Create new webdriver
+	 * Default Driver : chromedriver
+	 * Current expected chrome version : 89
+	 * @return webdriver instance
+	 */
 	public WebDriver getWebDriver() {
 		String browser = "chrome";
 		
+		//Fetching browser value passed by user
 		String commandLineBrowser = System.getProperty("browser");
-		System.out.println("Command Line Browser = " + commandLineBrowser);
+		
+		if(commandLineBrowser != null) {
+			browser = commandLineBrowser;
+		}
+		
+		//Verifying the OS version to get right WebDriver
 		String os = System.getProperty("os.name").toLowerCase();
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			String projectRootDir = System.getProperty("user.dir");
 			String driverPath = "";
-			ConfigFileReader configFileReader = new ConfigFileReader();
 			if(os.contains("mac")) {
 				driverPath = new ConfigFileReader().getProperty("driver.mac.path");
 			} else {
@@ -38,6 +49,9 @@ public class DriverManager {
 		return driver;
 	}
 	
+	/**
+	 * Quit the WebDriver
+	 */
 	public void quit() {
 		driver.quit();
 	}

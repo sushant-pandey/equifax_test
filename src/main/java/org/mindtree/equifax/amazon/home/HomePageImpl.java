@@ -9,17 +9,15 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePageImpl implements HomePage{
 	
-	private String amazonHomePageUrl = "";
-	
 	private WebDriver driver;
+	private SeleniumUtil seleniumUtil;
 	private By searchBox = By.id("twotabsearchtextbox");
 	private By searchButton = By.id("nav-search-submit-button");
-	private SeleniumUtil seleniumUtil;
+	
 	
 	public HomePageImpl(WebDriver driver) {
 		this.driver = driver;
 		seleniumUtil = new SeleniumUtil(driver);
-		
 	}
 	
 	/**

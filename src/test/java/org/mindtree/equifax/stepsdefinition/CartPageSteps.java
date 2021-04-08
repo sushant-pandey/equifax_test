@@ -4,11 +4,11 @@ import org.junit.Assert;
 import org.mindtree.equifax.amazon.cart.CartPage;
 import org.mindtree.equifax.amazon.data.TestContext;
 
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.*;
 
 public class CartPageSteps {
-	TestContext testContext;
-	CartPage cartPage;
+	private TestContext testContext;
+	private CartPage cartPage;
 
 	public CartPageSteps(TestContext context) {
 		testContext = context;
