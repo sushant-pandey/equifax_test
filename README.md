@@ -1,39 +1,40 @@
 These are the required test scripts for coding test.
 
-Command to execute tests
+##Command to execute tests
 
 mvn test
 mvn test -Dbrowser=chrome
 
-No support for any other browser
+##Required Chrome version
 
-Location of UI Test Fixture:
+89
+
+####No support for any other browser
+
+##Location of UI Test Fixture:
 
 src/test/resources/AmazonCheckout.feature
 
-Location of API Test Fixture
+##Location of API Test Fixture
 
 src/test/resources/RestApiTest.feature
 
-Location of Step Definitions
+##Location of Step Definitions
 
 src/test/resources/ -> org.mindtree.equifax.stepsdefinition
 
-API Tests Covered
+##Location of Configuration.properties
+/src/test/resources/config/Configuration.properties
 
-
-Location of Configuration.properties
-
-
-Location of JUnit TestRunner
+##Location of JUnit TestRunner
 
 src/test/resources/ -> org.mindtree.equifax.testrunner
 
-Location of Page Objects
+##Location of Page Objects
 
 src/main/java
 
-Location of Reports
+##Location of Reports
 
 target/
 
